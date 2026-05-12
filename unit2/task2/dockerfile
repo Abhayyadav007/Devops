@@ -1,0 +1,5 @@
+from ubuntu:latest 
+label maintainer="Student Demo" 
+env DEBIAN_FRONTEND=noninteractive
+run apt update && apt install -y php nano && rm -rf var/lib/apt/list/*
+cmd ["echo" , "Hello Student"]
